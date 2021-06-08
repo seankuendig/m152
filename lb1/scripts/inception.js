@@ -36,7 +36,7 @@
                     this.goal.y = 0;
                     break;
                 case "b":
-                    this.goal.z += Math.random()*1;
+                    this.goal.z += Math.random();
                     break;
                 case "c":
                     this.goal.z = this.sz;
@@ -126,9 +126,7 @@
         var i;
         var time_now = new Date().getTime();
         var time_pre = time_now;
-        for(i=0; i<8; i++){
-            trails.push(new Trail({x:Math.random()*50-25, y:Math.random()*50-25, z:i}, time_now, i));
-        }
+        trails.push(new Trail({x:Math.random()*50-25, y:Math.random()*50-25, z:0}, time_now, 0));
         camera = {x:0, y:0, z:-2};
         canvas.width = w.innerWidth;
         canvas.height = w.innerHeight;
