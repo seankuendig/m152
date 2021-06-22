@@ -123,7 +123,6 @@
         var canvas = d.getElementById("city");
         var ctx = canvas.getContext("2d");
         var trails = [];
-        var i;
         var time_now = new Date().getTime();
         var time_pre = time_now;
         trails.push(new Trail({x:Math.random()*50-25, y:Math.random()*50-25, z:0}, time_now, 0));
